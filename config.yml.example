@@ -6,28 +6,28 @@
 
       - user:
           #别名，多用户的时候用于区分用户
-          nickname: '我的名字'
+          nickname: '马汶杰'
           #类型请勿更改
           type: 1
           #qmsg KEY 请到：https://qmsg.zendee.cn/me.html 了解更多信息
-          qmsg: '这里填写你的qmsgkey'
+          qmsg: 'SCT109678TGrM7vLfeV9WZTwH7lTQFJ4sU'
           #收信人QQ
-          qq: '这里填写你的收信QQ'
+          qq: '1535743401'
           #学校全称，仅支持河南大学
-          schoolName: '河南大学'
+          schoolName: '华侨大学'
           #学号或者工号
-          username: '这里填写你的学号'
+          username: '1812102021'
           #密码
-          password: '这里填写你的密码'
+          password: '20000618mwjok.'
           #您的UA，可以通过二维码获取（仅限安卓用户），这是区别您和他人的重要一步，但实际上服务器并不会拿UA作为判断依据，所以懒人可以直接用我的
           ua: 'Mozilla/5.0 (Linux; Android 8.1.0; 16th Plus Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.110 Mobile Safari/537.36'
           #地址信息
           #附上经纬度查询地址（请自行选择自己的学校地址，address，lon，lat都要填查询到的）：http://api.map.baidu.com/lbsapi/getpoint/index.html
-          address: '河南省开封市顺河回族区塔云路'
+          address: '福建省厦门市集美区集美大道668号'
           #lon 经度，一定要精确到小数点后5位
-          lon: 114.37695
+          lon: 118.09138
           #lat 纬度，一定要精确到小数点后5位
-          lat: 34.82027
+          lat: 24.61011
           #填写表单时判断是否与您预设的一一对应，不对应就会报错，建议开启
           checkTitle: 1
           #在校内填0，在校外填1
@@ -37,37 +37,42 @@
           #表单信息，目前的信息和河南大学签到的内容一致
       forms1:
         - form:
-            title: 1. 暑假期间，本人身体健康状况是否良好 (必填)
-            value: 是
+            title: 1. 你的学生类别
+            value: 本科生
         - form:
-            title: 2. 暑假期间，与本人共同居住者身体健康状况是否良好 (必填)
-            value: 是
+            title: 2. 你的生源类别
+            value: 内地学生
         - form:
-            title: 3. 暑假期间，是否有中高风险地区旅居史 (必填)
+            title: 3. 今天你的体温是多少？
+            value: 37.2℃及以下
+        - form:
+            title: 4. 今天你的身体状况是？
+            value: 健康
+        - form:
+            title: 5. 你是否有疑似/确诊新冠肺炎？
             value: 否
         - form:
-            title: 4. 暑假期间，是否接触过确诊病例或无症状感染者 (必填)
-            value: 否
+            title: 6. 你是否因新冠肺炎就诊或住院？
+            value: 否            
         - form:
-            title: 5. 本人是否承诺以上所填信息真实有效，自愿承担因隐瞒不报产生的一切后果 (必填)
+            title: 7. 你当前是否被隔离？
+            value: 否 
+         - form:
+            title: 8. 近14天你或你的共同居住人是否有疫情中、高风险区域人员接触史？ 
+            value: 否 
+        - form:
+            title: 9. 近14天你或你的共同居住人是否和确诊、疑似病人接触过？
+            value: 否 
+        - form:
+            title: 10. 近14天你或你的共同居住人是否是确诊、疑似病例？
+            value: 否 
+        - form:
+            title: 11. 你或你的共同居住人目前是否被医学隔离？
+            value: 否            
+        - form:
+            title: 12. 本人承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处
             value: 是
 
-      forms2:
-          - form:
-                title: 当日，无中高风险地区旅居史，且旅居地区未出现疫情
-                value: 是
-          - form:
-                title: 当日，本人及与本人共同居住者体温正常、身体健康，且居家未外出
-                value: 是
-          - form:
-                title: 是否同时具备防疫健康信息码绿码（国家政务服务平台）和疫情防控行程卡绿码（国家政务服务平台）
-                value: 是
-          - form:
-                title: 是否已经完成新冠疫苗接种
-                value: 已完成疫苗接种
-          - form:
-                title: 本人是否承诺以上所填信息真实有效，自愿承担因隐瞒不报产生的一切后果
-                value: 是
 
 
     #将以上的 - user再复制一遍可以定义多个用户
